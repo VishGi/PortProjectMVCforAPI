@@ -1,0 +1,71 @@
+﻿@model IEnumerable<PortProjectMVCforAPI.Models.Slot>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Slot Availability View</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            @*<th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.SlotId)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.RUID)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.SLUserID)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>*@
+            @*<th>
+                @Html.DisplayNameFor(model => model.Sdate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Edate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cost)
+            </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.SlotId)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.RUID)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.SLUserID)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>*@
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Sdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Edate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cost)
+            </td>*@
+            
+        </tr>
+}
+    </tbody>
+</table>
